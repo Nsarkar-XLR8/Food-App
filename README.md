@@ -1,4 +1,5 @@
 # Food-App
+<<<<<<< HEAD
 A food recipe app built with React.js and the Spoonacular API 
 
 
@@ -103,3 +104,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 For any inquiries or issues, please reach out to nsarkar6251@gmail.com.
 
+=======
+A recipe food app built with React.js using Spoonacular API
+>>>>>>> 6de7bd6d49638a6524fa6346853a4243df812ecb

@@ -1,0 +1,54 @@
+.foodCart {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+
+}
+
+.foodCart:hover{
+    background-color: #fff;
+    transform: scale(1.1s);
+}
+
+.imageItem {
+  width: 100%;
+  height: auto;
+}
+
+.contentItem {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+
+  text-align: center;
+}
+
+.nameItem {
+  font-weight: 600;
+  color: #393e46;
+}
+
+.buttonItem {
+  background: #29bb89;
+  color: antiquewhite;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;;
+}
+
+.buttonItem:hover {
+    background-color: #22a177;
+    transform: scale(1.1);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}

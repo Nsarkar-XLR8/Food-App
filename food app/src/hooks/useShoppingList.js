@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const STORAGE_KEY = "culinaryhub_shopping_list";
 
+
 export function useShoppingList() {
   const [items, setItems] = useState(() => {
     try {

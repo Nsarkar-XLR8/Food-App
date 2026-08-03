@@ -12,6 +12,7 @@ export function useFavorites() {
     }
   });
 
+  
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites));

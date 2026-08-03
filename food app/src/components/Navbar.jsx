@@ -2,6 +2,7 @@ import React from "react";
 import { UtensilsCrossed, Heart, ShoppingBag, Moon, Sun, Compass, Calendar } from "lucide-react";
 import styles from "./Navbar.module.css";
 
+
 export default function Navbar({
   activeView,
   setActiveView,

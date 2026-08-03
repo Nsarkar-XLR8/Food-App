@@ -2,6 +2,7 @@ import React from "react";
 import { Compass, Heart, ShoppingBag, Calendar, Shuffle } from "lucide-react";
 import styles from "./MobileBottomNav.module.css";
 
+
 export default function MobileBottomNav({
   activeView,
   setActiveView,

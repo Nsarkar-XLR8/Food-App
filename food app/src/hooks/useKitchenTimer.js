@@ -6,6 +6,7 @@ export function useKitchenTimer(initialMinutes = 5) {
   const [totalTime, setTotalTime] = useState(initialMinutes * 60);
   const timerRef = useRef(null);
 
+  
   useEffect(() => {
     if (isRunning && timeLeft > 0) {
       timerRef.current = setInterval(() => {

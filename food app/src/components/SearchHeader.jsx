@@ -11,6 +11,7 @@ const DIET_OPTIONS = [
   { label: "🥩 Paleo", value: "paleo" },
 ];
 
+
 const CUISINE_OPTIONS = [
   "All Cuisines", "Italian", "Asian", "Mexican", "Mediterranean", 
   "Indian", "American", "Greek", "French", "Japanese"

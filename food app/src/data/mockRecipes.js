@@ -140,6 +140,7 @@ export const MOCK_RECIPES = [
     },
     equipment: ["Rice Cooker / Pot", "Skillet", "Tofu Press", "Vegetable Peeler"]
   },
+  
   {
     id: 782585,
     title: "Classic Mediterranean Greek Salad",

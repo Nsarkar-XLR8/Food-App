@@ -5,6 +5,10 @@ const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY || "9a9f317fed4b4ae68cf
 
 const recipeCache = new Map();
 
+
+
+
+
 /**
  * Search recipes with query, diet, cuisine, dishType, maxReadyTime, sort
  */

@@ -1,0 +1,77 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.25rem 5rem;
+  }
+}
+
+.emptyContainer {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.emptyIconBg {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.heartIcon {
+  color: var(--accent-rose);
+}
+
+.utensilIcon {
+  color: var(--accent-emerald);
+}
+
+.emptyTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+}
+
+.emptySubtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.resetFiltersBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--accent-emerald);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  transition: var(--transition);
+}
+
+.resetFiltersBtn:hover {
+  background: var(--accent-emerald-hover);
+  transform: translateY(-2px);
+}

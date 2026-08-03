@@ -1,0 +1,396 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background: #090d16;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 2rem;
+  overflow: hidden;
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brandGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badgeLabel {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.wakeLockBadge {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+.listeningBadge {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  animation: pulse 1.5s infinite;
+}
+
+.recipeTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.iconActionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 9999px;
+  border: 1px solid #273549;
+  background: #151c2c;
+  color: #cbd5e1;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.iconActionBtn:hover {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.listeningActive {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+  animation: pulse 1.5s infinite;
+}
+
+.voiceActive {
+  background: #10b981;
+  border-color: #10b981;
+  color: #ffffff;
+  animation: pulse 1.5s infinite;
+}
+
+.closeBtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #273549;
+  background: #151c2c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.closeBtn:hover {
+  background: #f43f5e;
+  border-color: #f43f5e;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 8px;
+  background: #1e293b;
+  border-radius: 9999px;
+  margin: 1.15rem 0 0.75rem;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #3b82f6 100%);
+  transition: width 0.3s ease;
+}
+
+.timerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #151c2c;
+  border: 1px solid #273549;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.85rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timerInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.timerIcon {
+  color: #10b981;
+}
+
+.autoDetectedTimerBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.autoDetectedTimerBtn:hover {
+  background: #f59e0b;
+  color: #ffffff;
+}
+
+.timerControls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tBtn {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tPlay {
+  background: #10b981;
+  border: none;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tPause {
+  background: #f59e0b;
+  border: none;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.displayArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+}
+
+.stepBadge {
+  background: #1e293b;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 1.15rem;
+  border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+
+.stepContent {
+  max-width: 920px;
+  margin: 0 auto 1.25rem;
+}
+
+.giantStepText {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .giantStepText {
+    font-size: 1.45rem;
+  }
+}
+
+.stepContextRow {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.contextGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.contextLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.contextPill {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.contextPillEq {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.keyHint {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.keyHint kbd {
+  background: #1e293b;
+  color: #cbd5e1;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.footerControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 0.85rem;
+}
+
+.navControlBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.1rem 2.2rem;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+}
+
+.prevBtn {
+  background: #1e293b;
+  color: #cbd5e1;
+}
+
+.prevBtn:hover:not(:disabled) {
+  background: #334155;
+  color: #ffffff;
+}
+
+.prevBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nextBtn {
+  background: #10b981;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+}
+
+.nextBtn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.finishBtn {
+  background: #3b82f6;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+}
+
+.finishBtn:hover {
+  background: #2563eb;
+}
+
+.stepCounterText {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #64748b;
+}
+
+@media (max-width: 640px) {
+  .footerControls {
+    flex-direction: column-reverse;
+    gap: 0.75rem;
+  }
+  .navControlBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

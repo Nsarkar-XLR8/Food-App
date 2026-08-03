@@ -1,109 +1,66 @@
-# Food-App
-<<<<<<< HEAD
-A food recipe app built with React.js and the Spoonacular API 
+# CulinaryHub (Food App)
 
+A modern, mobile-responsive, industry-grade recipe platform built with **React**, **Vite**, **Lucide Icons**, and the **Spoonacular API**.
 
-## Overview
+![CulinaryHub Banner](https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80)
 
-Food-App is a dynamic food recipe application built with React.js that utilizes the Spoonacular API to provide users with an extensive collection of recipes. The app allows users to search for recipes based on various criteria, view detailed instructions, and explore a wide range of culinary options.
+## 🌟 Key Features
 
-## Features
+- **📱 Mobile-First Responsive Design**: Optimized layouts with bottom navigation tabs, slide-over recipe drawer on mobile, and smooth touch targets.
+- **⚡ Smart Debounced Search**: 300ms live debounced search prevents API rate-limit exhaustion.
+- **🥗 Filter by Diet & Cuisine**: Filter recipes by Vegetarian, Vegan, Gluten-Free, Ketogenic, Paleo, Italian, Asian, Mexican, Mediterranean, Indian, and more.
+- **⚖️ Dynamic Servings Scaler**: Automatically recalculates ingredient quantities when scaling servings up or down.
+- **📏 US Imperial vs Metric Converter**: Instant toggle between Metric (grams, ml) and US Customary (cups, oz) measurements.
+- **🛒 Grocery Shopping Checklist**: Save ingredients across recipes into a personal interactive shopping list (persisted in `localStorage`).
+- **⏱️ Built-in Kitchen Cooking Timer**: Interactive countdown timer with chime notification to time baking and simmering steps.
+- **📊 Nutritional Breakdown & Allergen Alerts**: Macro breakdown (Calories, Carbs, Protein, Fat), Health Score, and allergen warning badges.
+- **❤️ Persisted Favorites**: Save recipes to your personal cookbook (persisted in `localStorage`).
+- **🤹 "What Should I Eat?" Randomizer**: One-tap quick recipe generator for undecided foodies.
+- **🛡️ Resilient Offline Fallback Engine**: Automatic fallback to rich offline mock datasets when Spoonacular API limit (150 calls/day) is reached or network is unavailable.
+- **🌙 Dark & Light Theme**: Built-in sleek dark mode toggle with CSS custom properties.
 
-- **Recipe Search**: Find recipes by ingredient, cuisine, or meal type.
-- **Detailed Recipe Information**: View ingredients, preparation steps, and nutritional information.
-- **User-Friendly Interface**: Intuitive and responsive design for an enhanced user experience.
-- **API Integration**: Powered by the Spoonacular API to deliver up-to-date recipe data.
+---
 
-## Technologies Used
+## 🛠️ Tech Stack
 
-- **React.js**: Front-end framework for building user interfaces.
-- **Spoonacular API**: Provides comprehensive recipe data.
-- **CSS**: For styling and responsive design.
+- **Frontend**: React 18, Vite
+- **Styling**: Vanilla CSS Variables, Modular Design Tokens, Glassmorphism
+- **Icons**: Lucide React
+- **API**: Spoonacular API with Mock Data Resilience Layer
 
-# Structure
+---
 
-```bash
-Food-App
-├── Overview
-│   └── Description of the app and its capabilities
-│
-├── Features
-│   ├── Recipe Search
-│   ├── Detailed Recipe Information
-│   ├── User-Friendly Interface
-│   └── API Integration
-│
-├── Technologies Used
-│   ├── React.js
-│   ├── Spoonacular API
-│   └── CSS
-│
-├── Installation
-│   ├── Clone the Repository
-│   ├── Navigate to the Project Directory
-│   ├── Install Dependencies
-│   ├── Create an `.env` File
-│   └── Start the Development Server
-│
-├── Usage
-│   ├── Search Recipes
-│   └── View Recipe Details
-│
-├── Contributing
-│   └── Instructions for contributing
-│
-├── License
-│   └── Licensing information
-│
-├── Contact
-│   └── Contact information
-│
-└── Acknowledgements
-    ├── Spoonacular API
-    └── React.js
+## 🚀 Getting Started
 
-```
+### Prerequisites
+- Node.js (v16+)
+- npm or yarn
 
-## Installation
+### Installation
 
-To get started with Food-App, follow these steps:
-
- **Clone the Repository**
+1. Navigate to the `food app` directory:
    ```bash
-   git clone https://github.com/yourusername/food-app.git
+   cd "food app"
+   ```
 
-* Navigate to the Project Directory
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
+3. Create a `.env` file in `food app/`:
+   ```env
+   VITE_SPOONACULAR_API_KEY=your_spoonacular_api_key
+   ```
 
-cd food-app
-Install Dependencies
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
+5. Open your browser at `http://localhost:5173`.
 
-npm install
-Create an .env File
+---
 
-Create a file named .env in the root directory of the project.
-Add your Spoonacular API key to the .env file:
-
-REACT_APP_SPOONACULAR_API_KEY=your_api_key_here
-* Start the Development Server
-
-
-npm start
-The app will be available at http://localhost:3000.
-
-# Usage
-* Search Recipes: Use the search bar to find recipes by entering ingredients, cuisine types, or meal categories.
-View Recipe Details: Click on a recipe to see its detailed information, including ingredients, preparation steps, and nutritional facts.
-Contributing
-Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
-
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Contact
-For any inquiries or issues, please reach out to nsarkar6251@gmail.com.
-
-=======
-A recipe food app built with React.js using Spoonacular API
->>>>>>> 6de7bd6d49638a6524fa6346853a4243df812ecb
+## 📄 License
+This project is licensed under the MIT License.
